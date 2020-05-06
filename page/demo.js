@@ -15,12 +15,17 @@ Page({
         })
       })
       .on('DecodeComplete', (res) => {
+        console.log(res)
         if (res.code == 0) {
+          wx.navigateTo({
+            url: '/page/result/result?data=' + JSON.stringify(res.data)
+          })
           wx.showModal({
             title: '',
             content: JSON.stringify(res.data),
           })
         } else {
+          console.log(res)
           console.log('解析失败：' + res.reason)
         }
         wx.hideLoading()

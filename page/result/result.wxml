@@ -1,0 +1,63 @@
+<!--page/result/result.wxml-->
+<view>
+  <view style="text-align:center">
+    <text>
+      扫描结果
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{name != ''}}">
+      姓名：{{name}}
+    </text >
+  </view>
+  <view>
+    <text  wx-if="{{comp != ''}}">
+      公司：{{comp}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{title != ''}}">
+      职位：{{title}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{addr != ''}}">
+      地址：{{addr}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{email != ''}}">
+      邮箱：{{email}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{phone != ''}}">
+      手机：{{phone}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{tel != ''}}">
+      电话：{{tel}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{qq != ''}}">
+      QQ：{{qq}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{wx != ''}}">
+      微信：{{wx}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{fax != ''}}">
+      传真：{{fax}}
+    </text>
+  </view>
+  <view>
+    <text wx-if="{{postcode != ''}}">
+      邮编：{{postcode}}
+    </text>
+  </view>
+</view>

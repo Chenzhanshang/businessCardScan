@@ -1,6 +1,6 @@
 let md5 = require('../md5.js')
-let app_id = '1106808288'
-let app_key = 'PDkgQiFFJLz9jwr7'
+let app_id = '2135400960'
+let app_key = 'jcDewZyf5OXpXwuX'
 let url = 'https://api.ai.qq.com/fcgi-bin/ocr/ocr_bcocr'
 
 let request = (base64Img, callback) => {
@@ -66,6 +66,7 @@ let _formatResult = (res) => {
     let itemList = res.data.item_list
     let item, itemName
     let key = 'unknown'
+    console.log(JSON.stringify(itemList))
     for (let idx in itemList) {
       item = itemList[idx]
       itemName = item.item

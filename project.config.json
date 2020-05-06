@@ -9,8 +9,10 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "touristappid",
-	"projectname": "demo",
+	"appid": "wx42d04dd214f8c84d",
+	"projectname": "wx-cardscanner",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
